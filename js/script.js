@@ -10,6 +10,7 @@ createApp({
     methods: {
         getTodoList() {
             axios.get(this.url).then((resp) => {
+                console.log(resp.data);
                 this.todoList = resp.data;
             });
         }
